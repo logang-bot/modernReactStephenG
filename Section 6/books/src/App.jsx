@@ -1,23 +1,20 @@
-import { useState } from "react";
+import { useContext, useEffect } from "react";
 import BookCreate from "./components/BookCreate";
-import "./App.css";
-import { testF } from "./components/test";
-
-// console.log(test);
+import BookList from "./components/BookList";
+import BooksContext from "./context/books";
 
 function App() {
-  const [books, setBooks] = useState([]);
+  const { fetchBooks } = useContext(BooksContext);
 
-  const createBook = (title) => {
-    // BAD CODE
-    books.push({ id: 123, title });
-    setBooks(books);
-  };
+  useEffect(() => {
+    fetchBooks();
+  }, []);
 
   return (
-    <div>
-      {books.length}
-      <BookCreate onCreate={createBook} />
+    <div className="app">
+      <h1>Reading List</h1>
+      <BookList />
+      <BookCreate />
     </div>
   );
 }

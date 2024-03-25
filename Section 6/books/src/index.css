@@ -10635,6 +10635,7 @@ a.has-text-danger-dark:hover {
   bottom: 0;
   padding: 20px 40px 30px;
   position: fixed;
+  left: 0;
   width: 100%;
 }
 .book-create h3 {
