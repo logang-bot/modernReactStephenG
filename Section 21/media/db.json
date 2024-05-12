@@ -3,8 +3,38 @@
     {
       "id": "a32c",
       "name": "Jodi Senger"
+    },
+    {
+      "id": "e958",
+      "name": "Mr. Terence Schiller"
+    },
+    {
+      "id": "8cd9",
+      "name": "Vickie Johnston"
     }
   ],
-  "albums": [],
-  "photos": []
+  "albums": [
+    {
+      "id": "d90a",
+      "userId": "a32c",
+      "title": "Awesome Concrete Bike"
+    },
+    {
+      "id": "8bb4",
+      "userId": "e958",
+      "title": "Rustic Rubber Fish"
+    },
+    {
+      "id": "1a7e",
+      "userId": "e958",
+      "title": "Electronic Steel Shoes"
+    }
+  ],
+  "photos": [
+    {
+      "id": "6ff8",
+      "albumId": "d90a",
+      "url": "https://loremflickr.com/150/150/abstract?lock=19815"
+    }
+  ]
 }
